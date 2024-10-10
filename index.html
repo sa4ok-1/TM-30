@@ -1,198 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="nav_bar">
-        <div class="logo">
-          <span class="shapes"></span>
-          Logo
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-page" id="home">
+        <header class="nav_bar">
+            <div class="logo">
+                <span class="shapes"></span> Logo
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">
+                Menu
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <nav class="menu" id="menu">
+                <a href="#" class="menu-link" data-id="0">Home</a>
+                <a href="#" class="menu-link" data-id="1">About us</a>
+                <a href="#" class="menu-link" data-id="2">Services</a>
+                <a href="#" class="menu-link" data-id="3">Portfolio</a>
+                <a href="#" class="menu-link" data-id="4">Blog</a>
+                <a href="#" class="menu-link" data-id="5">Pages</a>
+                <a href="#" class="menu-link" data-id="6">Contact us</a>
+            </nav>
+        </header>
+        <div class="nextToaside">
+            <div class="aside-images">
+                <img class="aside_photo" src="./icons/Frame 555.svg" alt />
+                <img class="aside_photo" src="./icons/Frame 556.png" alt />
+                <img class="aside_photo" src="./icons/Frame 534.png" alt />
+            </div>
+            <div class="social-network">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social" src="icons/FaceBook.svg" alt="FaceBook" />
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img class="social" src="icons/YouTube.svg" alt="YouTube" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="social" src="icons/Instagram.svg" alt="Instagram" />
+                </a>
+                <a href="https://www.threads.net/" target="_blank">
+                    <img class="social" src="icons/Button with icon.png" alt="X" />
+                </a>
+
+
+                <div class="it-solution">
+                    <h1 class="main-title">IT SOLUTION</h1>
+                    <h2 class="second-title">
+                            Providing The Best Services & IT
+                            <span class="underline">Solutions</span>
+                        </h2>
+                    <section>
+                        <p class="contnet">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci.
+                        </p>
+                    </section>
+                    <button class="start-button">
+                        Start now
+                        <img src="icons/Arrow side up.svg" alt />
+                    </button>
+                </div>
+            </div>
+            <div class="digital-marketing">
+                <img src="./icons/Frame 536.png" alt="">
+                <img src="./icons/Frame 526.png" alt="">
+                <img src="./icons/Frame 539.png" alt="">
+                <img src="./icons/Frame 533.png" alt="">
+                <img src="./icons/Frame 543.png" alt="">
+                <img src="./icons/Frame 532.png" alt="">
+                <img src="./icons/Frame 542.png" alt="">
+                <img src="./icons/Frame 537.png" alt="">
+                <img src="./icons/Frame 531.png" alt="">
+                <img src="./icons/Frame 534.png" alt="">
+
+            </div>
+
         </div>
-        <button class="menu-button" onclick="toggleMenu()">
-          Menu
-          <div class="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
-        <div class="menu" id="menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-      <div class="aside-images">
-        <img class="aside_photo" src="./icons/Frame 555.svg" alt="" />
-        <img class="aside_photo" src="./icons/Frame 556.png" alt="" />
-        <img class="aside_photo" src="./icons/Frame 557.png" alt="" />
-      </div>
-      <div class="social-network">
-        <img class="social" src="icons/FaceBook.svg" alt="" />
-        <img class="social" src="icons/YouTube.svg" alt="" />
-        <img class="social" src="icons/Instagram.svg" alt="" />
-        <img class="social" src="icons/Button with icon.png" alt="" />
-      </div>
-      <div class="it-solution">
-        <h1 class="main-title">IT SOLUTION</h1>
-        <h2 class="second-title">
-          Providing The Best Services & IT
-          <span class="underline">Solutions</span>
-        </h2>
-        <section>
-          <p class="contnet">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-            architecto dolorum inventore totam adipisci.
-          </p>
-        </section>
-        <button class="start-button">
-          Start now
-          <img src="icons/Arrow side up.svg" alt="" />
-        </button>
-      </div>
-      <div class="digital-marketing">
-        <div class="first-image"></div>
-        <div class="second-image"></div>
-        <div class="third-image"></div>
-        <div class="dg-market-img"></div>
-        <div class="five-image"></div>
-      </div>
-      <div class="button-container">
-        <button class="Button-down" id="scrollButton">
-          <img
-            class="Button-arrow-down"
-            src="./icons/Button with icon down.svg"
-            alt="Scroll Down"
-          />
-        </button>
-      </div>
+
     </div>
-    <div class="about-us-container">
-      <div class="about-us">
-        <h1 class="hearder-title">ABOUT US</h1>
-        <p class="header-text">
-          Trusted Worldwide by Clients Since
-          <span class="header-text-year">1980</span>
-        </p>
-        <p class="header-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
-          molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora
-          reiciendis libero voluptate!
-        </p>
 
-        <div class="button -getInTouch">
-          <button class="btb-getInTouch">
-            Get In Touch
-            <img src="./icons/Arrow side up.svg" alt="" />
-          </button>
-        </div>
-        <div class="section">
-          <img src="./icons/Star.svg" alt="" />
-          <h2>First on Field</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+    <div class="button-container">
+        <button class="Button-down scrollButton">
+            <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+        </button>
+    </div>
 
-        <div class="section">
-          <img src="./icons/Map.svg" alt="" />
-          <h2>Worldwide Services</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
 
-        <div class="section">
-          <img src="./icons/Check.svg" alt="" />
-          <h2>Easy to Reach</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+    </div>
+    <div class="about-us-container" id="about-us">
+        <div class="about-us">
+            <div class="headerTobtn">
+                <h1 class="hearder-title" data-id="1">ABOUT US</h1>
+                <p class="header-text">
+                    Trusted Worldwide by Clients Since
+                    <span class="header-text-year">1980</span>
+                </p>
+                <p class="header-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
+                </p>
+                <div class="button -getInTouch">
+                    <button class="btb-getInTouch">
+                        Get In Touch
+                        <img src="./icons/Arrow side up.svg" alt />
+                    </button>
+                </div>
+            </div>
 
-        <div class="section">
-          <img src="./icons/Help.svg" alt="" />
-          <h2>24/7 Support</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+            <div class="manager-section">
+                <div class="section">
+                    <img src="./icons/Star.svg" alt />
+                    <h2>First on Field</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
 
-        <div class="scroll-indicator">
-          <span class="arrow-icon"></span>
+                <div class="section">
+                    <img src="./icons/Map.svg" alt />
+                    <h2>Worldwide Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="section">
+                    <img src="./icons/Check.svg" alt />
+                    <h2>Easy to Reach</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="section">
+                    <img src="./icons/Help.svg" alt />
+                    <h2>24/7 Support</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span class="arrow-icon"></span>
+            </div>
+            <div class="button-container">
+                <button class="Button-down scrollButton">
+                    <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+                </button>
+            </div>
         </div>
-        <div class="button-container">
-          <button class="Button-down" id="scrollButton">
-            <img
-              class="Button-arrow-down"
-              src="./icons/Button with icon down.svg"
-              alt="Scroll Down"
-            />
-          </button>
-        </div>
-      </div>
     </div>
     <!-- Services and Web Development -->
-    <div class="services">
-      <div class="services-title">
-        <img
-          class="main-img"
-          src="./icons/work-video-conference.png"
-          alt="Icon"
-        />
-        <h1 class="hearder-title">SERVICES</h1>
-        <h2 class="header-text">Services We Offer</h2>
-      </div>
-      <div class="services-description">
-        <p class="header-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Omnis id
-          atque dignissimos repellat quae ullam. Consectetur adipisicing elit.
-          Ullam.
-        </p>
-      </div>
-      <div class="button-seeAll">
-        <a class="btb-getInTouch">
-          See all services
-          <img src="./icons/Arrow side up.svg" alt="" />
-        </a>
-      </div>
-      <!-- Web Development -->
-      <div class="Web-Development">
-        <h1 class="header-text">Web Development</h1>
-        <p class="header-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
-          repellendus minima reiciendis nobis dolore obcaecati.
-        </p>
-        <div class="button-Read-more">
-          <a class="btb-Read-more">
-            Read more
-            <img src="./icons/arrow-right.png" alt="" />
-          </a>
+    <div class="servicesWebTog">
+        <div class="services" id="services">
+            <div class="services-title">
+                <img class="main-img" src="./icons/work-video-conference.png" alt="Icon" />
+                <h1 class="hearder-title">SERVICES</h1>
+                <h2 class="header-text">Services We Offer</h2>
+            </div>
+            <div class="services-description">
+                <p class="header-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Omnis id atque dignissimos repellat quae ullam. Consectetur adipisicing elit. Ullam.
+                </p>
+            </div>
+            <div class="button-seeAll">
+                <a class="btb-getInTouch">
+                        See all services
+                        <img src="./icons/Arrow side up.svg" alt />
+                    </a>
+            </div>
         </div>
-      </div>
-      <div class="service-item">
-        <a href="#">Web-Development</a>
-        <a href="#">Digital Marketing</a>
-        <a href="#">SaaS Products</a>
-        <a href="#">Apps Development</a>
-        <a href="#">SEO Services</a>
-        <a href="#">Data Analysis</a>
-      </div>
-      <div class="button-container">
-        <button class="Button-down" id="scrollButton">
-          <img
-            class="Button-arrow-down"
-            src="./icons/Button with icon down.svg"
-            alt="Scroll Down"
-          />
-        </button>
-      </div>
-     
+        <div class="web-container">
+            <div class="Web-Development">
+                <h1 class="text-web">Web Development</h1>
+                <p class="header-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.
+                </p>
+                <div class="button-Read-more">
+                    <a class="btb-Read-more">
+                            Read more
+                            <img src="./icons/arrow-right.png" alt />
+                        </a>
+                </div>
+            </div>
+            <div class="service-item">
+                <a class="service-link" href="#">Web-Development</a>
+                <a class="service-link" href="#">Digital Marketing</a>
+                <a class="service-link" href="#">SaaS Products</a>
+                <a class="service-link" href="#">Apps Development</a>
+                <a class="service-link" href="#">SEO Services</a>
+                <a class="service-link" href="#">Data Analysis</a>
+            </div>
+            <div class="button-container">
+                <button class="Button-down scrollButton">
+                    <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- WHY CHOOSE US -->
+     <div class="chooseUsTogether">
+        <div class="container">
+            <div class="choose-us">
+                <img class="main-img" src="./icons/business-business-deal.png" alt="business-deal">
+                <h1 class="hearder-title">Why Choose Us</h1>
+                <h2 class="header-text"> Why Our Customers Choose<span
+                            class="header-text-year">Working</span> <br>
+                        With Us
+                    </h2>
+                <p class="header-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
+                </p>
+                <div class="button-seeAll">
+                    <a class="btb-getInTouch">
+                            Get in touch
+                            <img src="./icons/Arrow side up.svg" alt />
+                        </a>
+                </div>
+            </div>
+        </div>  
+        <!-- Web Development -->
+        <div class="reason-why-our-company">
+            <section class="section">
+                <div class="header">
+                    <div class="number">01.</div>
+                    <h2 class="title">Latest Technologies</h2>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.
+                </p>
+            </section>
+            <section class="section">
+                <div class="header">
+                    <div class="number">02.</div>
+                    <h2 class="title">Unique Solutions</h2>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.
+                </p>
+            </section>
+            <section class="section">
+                <div class="header">
+                    <div class="number">03.</div>
+                    <h2 class="title">Powerful Strategies</h2>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.
+                </p>
+            </section>
+            <div class="button-container">
+                <button class="Button-down scrollButton">
+                    <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="sucsess-project">
+        <section class="section-project section-project-1">
+            <div class="finish-project">
+                <img src="./icons/Checkbox.png" alt="Checkbox">
+                <div class="count">758+</div>
+                <p class="text-project">Finished Projects</p>
+            </div>
+        </section>
+        <hr class="middle-line">
+        <section class="section-project section-project-2">
+            <div class="finish-project">
+                <img src="./icons/Checkbox.png" alt="Checkbox">
+                <div class="count">23</div>
+                <p class="text-project">Finished Projects</p>
+            </div>
+        </section>
+        <hr class="middle-line">
+        <section class="section-project section-project-3">
+            <div class="finish-project">
+                <img src="./icons/Checkbox.png" alt="Checkbox">
+                <div class="count">200+</div>
+                <p class="text-project">Finished Projects</p>
+            </div>
+        </section>
+        <hr class="middle-line">
+        <section class="section-project section-project-4">
+            <div class="finish-project">
+                <img src="./icons/Checkbox.png" alt="Checkbox">
+                <div class="count">28+</div>
+                <p class="text-project">Finished Projects</p>
+            </div>
+        </section>
+        <div class="button-container">
+            <button class="Button-down scrollButton">
+                <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+            </button>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <h1 class="hearder-title">PORTFOLIO</h1>
+        <h2 class="header-text">Awesome <br> Portfolio</h2>
+        <div class="service-item">
+            <a class="service-link" href="#">All</a>
+            <a class="service-link" href="#">Mobile Apps</a>
+            <a class="service-link" href="#">Cloud</a>
+            <a class="service-link" href="#">Data Analysis</a>
+            <a class="service-link" href="#">Hosting</a>
+        </div>
+        <img class="Frmae575All" src="./icons/Frame 575.png" alt="ALLImages">
+        <div class="button-container">
+            <button class="Button-down scrollButton">
+                <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+            </button>
+        </div>
+    </div>
+    <div class="our-clients" id="pages">
+        <h1 class="hearder-text">Trusted By <br>
+            Over <span class="under-decor">500</span> Clients
+            Around The World
+        </h1>
+        <div class="container">
+            <div class="rectangle">Logo</div>
+            <div class="rectangle">Logo</div>
+            <div class="rectangle">Logo</div>
+            <div class="rectangle">Logo</div>
+            <div class="rectangle">Logo</div>
+        </div>
+        <div class="button-container">
+            <button class="Button-down scrollButton">
+                <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+            </button>
+        </div>
+    </div>
+    <!-- PRICING PLANS -->
+    <div class="container-pricing-plans">
+        <div class="princing-plans">
+            <h1 class="plans-title">PRICING PLANS</h1>
+            <h2 class="plans-text">Affordable <br> Pricing Plans</h2>
+            <p class="palns-lorem">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis Id Atque Dignissimos Repellat Quae Ullam.
+            </p>
+            <div class="button-seeAll">
+                <a href="#" class="btb-getInTouch">
+                    See all Plans
+                    <img src="./icons/Arrow side up.svg" alt />
+                </a>
+            </div>
+        </div>
+        <div class="section-manager">
+            <section class="prices">
+                <h1 class="plans-title">Free</h1>
+                <p class="price">$00 <span class="text">/Per Project</span></p>
+                <hr class="middle-line-price">
+                <h2 class="plans-title">Features</h2>
+                <div>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>150 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>20 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>FreeLorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Added Lorem, Ipsum Dolor.</li>
+                </div>
+                <div class="button-pricePlan">
+                    <a href="#" class="btb-selectPlan">
+                        Select plan
+                    </a>
+                </div>
+            </section>
+            <section class="prices ">
+                <h1 class="plans-title">Standard</h1>
+                <p class="price">$85 <span class="text">/Per Project</span></p>
+                <hr class="middle-line-price">
+                <h2 class="plans-title">Features</h2>
+                <div>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>150 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>20 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>FreeLorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Added Lorem, Ipsum Dolor.</li>
+                </div>
+                <div class="button-pricePlan">
+                    <a href="#" class="btb-selectPlan">
+                        Select plan
+                    </a>
+                </div>
+            </section>
+            <section class="prices Pro-prices">
+                <h1 class="plans-title">
+                    Pro
+                    <div class="button-best-Offer">
+                        <a href="#">
+                            Best offer
+                        </a>
+                        <img src="./icons/Star.png" alt>
+                    </div>
+                </h1>
+                <p class="price">$150 <span class="text">/Per Project</span></p>
+                <hr class="middle-line-price">
+                <h2 class="plans-title">Features</h2>
+                <div>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>150 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>20 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>FreeLorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Added Lorem, Ipsum Dolor.</li>
+                </div>
+                <div class="button-pricePlan">
+                    <a href="#" class="btb-selectPlan">
+                        Select plan
+                    </a>
+                </div>
+            </section>
+            <section class="prices ">
+                <h1 class="plans-title">Ultimate</h1>
+                <p class="price">$210 <span class="text">/Per Project</span></p>
+                <hr class="middle-line-price">
+                <h2 class="plans-title">Features</h2>
+                <div>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>150 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>20 Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Lorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>FreeLorem, Ipsum Dolor.</li>
+                    <li class="features"><img src="./icons/Check  pirce.png" alt>Added Lorem, Ipsum Dolor.</li>
+                </div>
+                <div class="button-pricePlan">
+                    <a href="#" class="btb-selectPlan">
+                        Select plan
+                    </a>
+                </div>
+            </section>
+            <div class="button-container">
+                <button class="Button-down scrollButton">
+                    <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Testmonials -->
+    <div class="testmonials-container">
+        <header>
+            <h1>Testmonials</h1>
+            <h2>Testmonials Customers</h2>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis Id Atque Dignissimos Repellat Quae Ullam.</p>
+            <div class="button-seeAll">
+                <a class="btb-getInTouch">
+                    See all services
+                    <img src="./icons/Arrow side up.svg" alt />
+                </a>
+            </div>
+        </header>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="./icons/“.png" alt>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+                <div class="profile">
+                    <div class="avatar"></div>
+                    <div class="info">
+                        <img class="user-photo" src="./icons/User.png" alt="user-photo">
+                        <p class="name">Yusuf Amin</p>
+                    </div>
+                    <p class="title">Founder</p>
+                </div>
+                <hr class="profile-middle-line">
 
-    <script src="js/script.js"></script>
-  </body>
+            </div>
+            <div class="testimonial">
+                <img src="./icons/“.png" alt>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+                <div class="profile">
+                    <div class="avatar"></div>
+                    <div class="info">
+                        <img class="user-photo" src="./icons/User.png" alt="user-photo">
+                        <p class="name">Yusuf Amin</p>
+                    </div>
+                    <p class="title">Founder</p>
+                </div>
+                <hr class="profile-middle-line">
+
+            </div>
+            <div class="testimonial">
+                <img src="./icons/“.png" alt>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+                <div class="profile">
+                    <div class="avatar"></div>
+                    <div class="info">
+                        <img class="user-photo" src="./icons/User.png" alt="user-photo">
+                        <p class="name">Yusuf Amin</p>
+                    </div>
+                    <p class="title">Founder</p>
+                </div>
+
+            </div>
+            <div class="button-container">
+                <button class="Button-down scrollButton">
+                    <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+                </button>
+            </div>
+        </div>
+        <div class="container-blog" id="blog">
+            <header class="headForBlog">
+                <h1 class="plans-title">BLOG</h1>
+                <h2 class="plans-text">Latest News</h2>
+                <div class="button-seeAll">
+                    <a class="btb-getInTouch">
+                        See all posts
+                        <img src="./icons/Arrow side up.svg" alt />
+                    </a>
+                </div>
+
+            </header>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./icons/design-illustrator-drawing-with-ipad.png" alt="Illustration">
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="date"><i class="icon-calendar"></i> 05 oct
+                            2024</span>
+                        <span class="category">Hosting</span>
+                    </div>
+                    <h3 class="card-title">How Litespeed Technology Works To
+                        Speed
+                        Up Your Site</h3>
+                    <p class="price">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.lure nulla dolorem, voluptates molestiae
+                    </p>
+                    <div class="card-footer">
+                        <img class="user-photo-blog" src="./icons/User.png" alt="user-photo">
+                        <span class="author"><i class="icon-user"></i> Yusuf
+                            Amin</span>
+                        <a href="#" class="read-more">Read more <i
+                                class="icon-arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./icons/design-illustrator-drawing-with-ipad.png" alt="Illustration">
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="date"><i class="icon-calendar"></i> 05 oct
+                            2024</span>
+                        <span class="category">Hosting</span>
+                    </div>
+                    <h3 class="card-title">How Litespeed Technology Works To
+                        Speed
+                        Up Your Site</h3>
+                    <p class="price">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.lure nulla dolorem, voluptates molestiae
+                    </p>
+                    <div class="card-footer">
+                        <img class="user-photo-blog" src="./icons/User.png" alt="user-photo">
+                        <span class="author"><i class="icon-user"></i> Yusuf
+                            Amin</span>
+                        <a href="#" class="read-more">Read more <i
+                                class="icon-arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./icons/design-illustrator-drawing-with-ipad.png" alt="Illustration">
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="date"><i class="icon-calendar"></i> 05 oct
+                            2024</span>
+                        <span class="category">Hosting</span>
+                    </div>
+                    <h3 class="card-title">How Litespeed Technology Works To
+                        Speed
+                        Up Your Site</h3>
+                    <p class="price">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.lure nulla dolorem, voluptates molestiae
+                    </p>
+                    <div class="card-footer">
+                        <img class="user-photo-blog" src="./icons/User.png" alt="user-photo">
+                        <span class="author"><i class="icon-user"></i> Yusuf
+                            Amin</span>
+                        <a href="#" class="read-more">Read more <i
+                                class="icon-arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="Button-down scrollButton">
+                    <img class="Button-arrow-down" src="./icons/Button with icon down.svg" alt="Scroll Down" />
+                </button>
+            </div>
+        </div>
+
+        <footer class="footer-info" id="contact-us">
+            <div class="logo">
+                <span class="shapes"></span>
+                <p class="logo-footer">Logo</p>
+            </div>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere modi possimus dignissimos, aliquam nobis eaque? Voluptatem magnam quisquam rem.</p>
+            <p class="text">Subscribe To Our News Letter</p>
+            <div class="subscribe-bar">
+                <input type="email" placeholder="Email Address" />
+                <button type="submit">
+                    Subscribe <img src="./icons/Arrow side up.svg" alt="">
+                </button>
+            </div>
+            <p class="ft-title">*We Will Not Share Your Personal Info</p>
+            <div class="footer-section">
+                <h2 class="head-link">Useful Links</h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.google.com/"><img src="./icons/Open.png" alt="Google">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/"><img src="./icons/Open.png" alt="Dribbble">Dribbble</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/"><img src="./icons/Open.png" alt="LinkedIn">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/"><img src="./icons/Open.png" alt="Wikipedia">Wikipedia</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2 class="head-link">Resources</h2>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/"><img src="./icons/Open.png" alt="arroww">Support</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/"><img src="./icons/Open.png" alt="arroww">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/"><img src="./icons/Open.png" alt="arroww">Drivers</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/"><img src="./icons/Open.png" alt="arroww">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2 class="head-link">Contact Information</h2>
+                <ul>
+                    <li class="ft-info">
+                        <a href="mailto:example@support.com"> <img src="./icons/Email.png" alt=""> example@support.com</a>
+                    </li>
+                    <li class="ft-info"> <img src="./icons/Map.png" alt="mapa">5 xyz st., adc, vallhalla </li>
+                    <li class="ft-info"><img src="./icons/Call.png" alt="call"> <a href="tel:+20123456789">+20123456789 </a></li>
+                </ul>
+            </div>
+            <p class="copyright">&copy; 2024 Company Name </p>
+            <div class="prv-police">
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+
+
+        </footer>
+
+
+        <script src="js/script.js"></script>
+</body>
+
 </html>
